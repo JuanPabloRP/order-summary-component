@@ -53,6 +53,9 @@ body {
   gap: 10px;
   align-items: center;
 }
+.card__plan__change:hover {
+  color: hsl(223deg, 47%, 23%);
+}
 .card__btnContinue {
   width: 80%;
   display: block;
@@ -71,7 +74,9 @@ body {
   background-color: hsl(223deg, 47%, 23%);
 }
 .card__cancelOrder {
+  background: none;
   color: hsl(223deg, 47%, 23%);
+  color: hsl(224deg, 23%, 55%);
   width: 50%;
   margin-bottom: 2rem;
   border: none;

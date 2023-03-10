@@ -47,6 +47,10 @@ body {
 			gap: 10px;
 			align-items: center;
 		}
+
+		&__change:hover {
+			color: $color-neutral-tertiary;
+		}
 	}
 
 	&__btnContinue {
@@ -70,7 +74,9 @@ body {
 	}
 
 	&__cancelOrder {
+    background: none;
 		color: $color-neutral-tertiary;
+    color: $color-neutral-secundary;
 		width: 50%;
 		margin-bottom: 2rem;
 		border: none;
