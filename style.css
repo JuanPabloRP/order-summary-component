@@ -1,0 +1,103 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+/*
+- Mobile: 375px
+- Desktop: 1440px
+*/
+body {
+  background: url("../images/pattern-background-mobile.svg");
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: "Red Hat Display", serif;
+  font-weight: 700;
+}
+
+.card {
+  width: 90%;
+  background-color: hsl(225deg, 100%, 98%);
+  border-radius: 20px;
+}
+.card__illustration {
+  width: 100%;
+  border-radius: 20px 20px 0 0;
+}
+.card__title {
+  padding: 1rem;
+  font-size: 1.5rem;
+  color: hsl(223deg, 47%, 23%);
+  font-weight: 900;
+}
+.card__paragraph {
+  font-size: 16px;
+  padding: 0.5rem 2rem;
+  font-weight: 500;
+  color: hsl(224deg, 23%, 55%);
+}
+.card__plan {
+  display: flex;
+  padding: 0.5rem 1.5rem;
+  margin: 2rem 0;
+  justify-content: space-around;
+  align-items: center;
+}
+.card__plan__description {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
+}
+.card__btnContinue {
+  width: 80%;
+  display: block;
+  border: none;
+  background-color: hsl(245deg, 75%, 52%);
+  color: hsl(225deg, 100%, 98%);
+  margin: 1rem auto;
+  border-radius: 7px;
+  padding: 0.7rem 0;
+}
+.card button {
+  font-weight: 700;
+}
+.card__btnContinue:hover {
+  cursor: pointer;
+  background-color: hsl(223deg, 47%, 23%);
+}
+.card__cancelOrder {
+  color: hsl(223deg, 47%, 23%);
+  width: 50%;
+  margin-bottom: 2rem;
+  border: none;
+}
+.card__cancelOrder:hover {
+  cursor: pointer;
+}
+
+.description__price {
+  color: hsl(224deg, 23%, 55%);
+}
+
+@media (min-width: 1024px) {
+  body {
+    background: url("../images/pattern-background-desktop.svg");
+  }
+  .card {
+    width: 30%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  .card__paragraph, .card__plan, .card__btnContinue {
+    width: 70%;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

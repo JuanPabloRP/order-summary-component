@@ -1,0 +1,108 @@
+@import './style/index';
+
+body {
+	background: $background-body-mobile;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	font-family: $font-family;
+	font-weight: $font-weight-b;
+}
+
+.card {
+	width: 90%;
+	background-color: $color-neutral-primary;
+	border-radius: $border-radius;
+
+	&__illustration {
+		width: 100%;
+		border-radius: $border-radius $border-radius 0 0;
+	}
+
+	&__title {
+		padding: 1rem;
+		font-size: $font-size-title-l;
+		color: $color-neutral-tertiary;
+		font-weight: $font-weight-xb;
+	}
+
+	&__paragraph {
+		font-size: $font-size-paragraph;
+		padding: 0.5rem 2rem;
+		font-weight: $font-weight-m;
+		color: $color-neutral-secundary;
+	}
+
+	&__plan {
+		display: flex;
+		padding: 0.5rem 1.5rem;
+		margin: 2rem 0;
+		justify-content: space-around;
+		align-items: center;
+
+		&__description {
+			display: flex;
+			flex-wrap: wrap;
+			gap: 10px;
+			align-items: center;
+		}
+	}
+
+	&__btnContinue {
+		width: 80%;
+		display: block;
+		border: none;
+		background-color: $color-secundary;
+		color: $color-neutral-primary;
+		margin: 1rem auto;
+		border-radius: $border-radius-button;
+		padding: 0.7rem 0;
+	}
+
+	& button {
+		font-weight: $font-weight-b;
+	}
+
+	&__btnContinue:hover {
+		cursor: pointer;
+		background-color: $color-neutral-tertiary;
+	}
+
+	&__cancelOrder {
+		color: $color-neutral-tertiary;
+		width: 50%;
+		margin-bottom: 2rem;
+		border: none;
+	}
+
+	&__cancelOrder:hover {
+		cursor: pointer;
+	}
+}
+
+.description {
+	&__price {
+		color: $color-neutral-secundary;
+	}
+}
+
+@media (min-width: 1024px) {
+	body {
+		background: $background-body-desktop;
+	}
+
+	.card {
+		width: 30%;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: center;
+
+		&__paragraph,
+		&__plan,
+		&__btnContinue {
+			width: 70%;
+		}
+	}
+}

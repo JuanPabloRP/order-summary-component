@@ -1,0 +1,27 @@
+/*
+- Mobile: 375px
+- Desktop: 1440px
+*/
+
+$color-primary: hsl(225, 100%, 94%);
+$color-secundary: hsl(245, 75%, 52%);
+
+$color-neutral-primary: hsl(225, 100%, 98%);
+$color-neutral-secundary: hsl(224, 23%, 55%);
+$color-neutral-tertiary: hsl(223, 47%, 23%);
+
+$font-size-paragraph: 16px;
+$font-size-title-s: 0.7rem;
+$font-size-title-m: 1rem;
+$font-size-title-l: 1.5rem;
+
+$font-family: 'Red Hat Display', serif;
+$font-weight-m: 500;
+$font-weight-b: 700;
+$font-weight-xb: 900;
+
+$background-body-mobile: url('../images/pattern-background-mobile.svg');
+$background-body-desktop: url('../images/pattern-background-desktop.svg');
+
+$border-radius: 20px;
+$border-radius-button: 7px;
