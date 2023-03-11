@@ -10,7 +10,7 @@
 - Desktop: 1440px
 */
 body {
-  background: url("../images/pattern-background-mobile.svg");
+  background: "../images/pattern-background-mobile.svg";
   display: flex;
   justify-content: center;
   align-items: center;
